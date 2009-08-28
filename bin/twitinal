@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby192
 # encoding: utf-8
 require 'rubygems'
-$: << File.dirname(__FILE__) + '..'
+$: << File.dirname(__FILE__) + '/..'
 require 'lib/twitinal'
 
 def s(o); puts o; system o; end
