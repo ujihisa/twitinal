@@ -7,6 +7,10 @@
 
 twitinal watches the user, and *do* it.
 
+You may need to install rubytter on ahead.
+
+    $ gem install rubytter
+
 ## What is Twitinal?
 
 There are some application of "Twitter + Terminal".
