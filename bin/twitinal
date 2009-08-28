@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby192
+# encoding: utf-8
+require 'rubygems'
+$: << File.dirname(__FILE__) + '/..'
+require 'lib/twitinal'
+
+def s(o); puts o; system o; end
+
+log = Twitinal.get(ARGV.first)
+loop do
+  diff = Twitinal.get(ARGV.first) - log
+  diff.each do |cmd|
+    s cmd
+  end
+  sleep 30
+end
