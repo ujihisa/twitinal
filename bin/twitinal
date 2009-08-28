@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby192
+# vim: fileencoding: utf-8
+require 'rubygems'
+require 'rubytter'
+
+def s(o); puts o; system o; end
+
+log = Rubytter.new.user_timeline('ujm').map(&:text)
+loop do
+  diff = Rubytter.new.user_timeline('ujm').map(&:text) - log
+  diff.each do |cmd|
+    s cmd
+  end
+  sleep 30
+end
