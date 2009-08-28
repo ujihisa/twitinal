@@ -5,6 +5,6 @@ require 'rubytter'
 module Twitinal
   module_function
   def get(target)
-    Rubytter.new.user_timeline(target).map(&:text)
+    Rubytter.new.user_timeline(target).map(&:text).reverse
   end
 end
