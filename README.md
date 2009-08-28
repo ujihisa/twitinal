@@ -3,13 +3,18 @@
 ## Twitinal in a second
 
     $ gem install twitinal
-    $ twitinal
+    $ twitinal {username}
 
-## Description
+twitinal watches the user, and *do* it.
 
-> What's the difference between Twitinal and other terminal based twitter client applications?
+## What is Twitinal?
 
-I have no idea.
+There are some application of "Twitter + Terminal".
+[Termtter](http://termtter.org/) is one of the most successful one,
+which is a twitter client application works on a terminal.
+
+Twitinal is the opposite one. Twitinal is a terminal application
+works on a twitter.
 
 ## Author
 
