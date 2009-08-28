@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby192
 # encoding: utf-8
 require 'rubygems'
-require 'rubytter'
+$: << File.basename(__FILE__)
+require 'lib/twitinal'
 
 def s(o); puts o; system o; end
 
