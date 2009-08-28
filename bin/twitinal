@@ -5,9 +5,9 @@ require 'rubytter'
 
 def s(o); puts o; system o; end
 
-log = Rubytter.new.user_timeline('ujm').map(&:text)
+log = Twitinal.get(ARGV.first)
 loop do
-  diff = Rubytter.new.user_timeline('ujm').map(&:text) - log
+  diff = Twitinal.get(ARGV.first) - log
   diff.each do |cmd|
     s cmd
   end
